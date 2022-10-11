@@ -229,7 +229,6 @@ img {
 }
 
 
-
 /* autres page */
 
 .fleche-retour{
@@ -285,7 +284,6 @@ img {
   }
   }
 
-
 .plats{
   height: 60px;
   background-color: white;
@@ -298,22 +296,24 @@ img {
   align-items: flex-end;
 }
 
-.btn2{
-	padding: 20px;
-	width: 260px;
-  margin: auto;
-  margin-top: 60px;
-  margin-bottom: 100px;
-	border-radius: 30px;
-	background: linear-gradient(#ff79da, #9356dc);
-	color: white;
-	font-weight: 400;
-	text-decoration: none;
-  font-family: 'Roboto';
-  font-size: 22px; 
-  text-align: center;
-  box-shadow: 0px 5px 20px #999;
+.platsfond{
+  position: absolute;
+  z-index: -1;
+  right: 30px;
+  height: 100px;
+  width: 200px;
+  background-color: #99E2D0;
+  border-radius: 0px 30px 30px 0px;
+  transition: all 2s;
+}
 
+.platsfond i{
+  position: absolute;
+  z-index: -1;
+  right: 55px;
+  top: 40px; 
+  font-size: 25px;
+  color: white;
 }
 
 
