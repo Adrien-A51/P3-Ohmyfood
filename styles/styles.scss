@@ -160,12 +160,9 @@ a { /*5*/
   }
 }
 
-/*
-.Restos-card:hover, .Restos-card:focus, .Restos-card:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.Restos-card:hover{
+  box-shadow: 10px 10px 40px #999;
 }
-*/
 
 .Restos-card-text {
   padding: 20px 0 0 20px; /*2*/
@@ -230,7 +227,13 @@ img {
   margin-bottom: 15px;
   text-align: center;
   font-size: 40px;
+  background: url(/images/coeur-vide.svg);
 }
+
+.coeur:hover{
+  background: url(images/coeur-plein.svg);
+}
+
 
 
 /* autres page */
