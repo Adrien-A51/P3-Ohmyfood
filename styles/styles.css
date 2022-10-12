@@ -108,7 +108,8 @@ h3 {
   background-color: #f7f6f6;
   padding: 50px 0px 50px 0px;
 }
-.intro .btn {
+
+.btn {
   padding: 20px;
   width: 260px;
   margin: auto;
@@ -117,11 +118,29 @@ h3 {
   color: white;
   font-family: "Roboto";
   font-weight: 400;
-  text-decoration: none;
+  font-size: 22px;
   box-shadow: 0px 5px 20px #999;
 }
-
 .btn:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+}
+
+.btn2 {
+  padding: 20px;
+  width: 260px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  border-radius: 30px;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  box-shadow: 0px 5px 20px #999;
+}
+.btn2:hover {
   background: linear-gradient(#9356dc, #ff79da);
 }
 
@@ -147,11 +166,9 @@ h3 {
   padding-left: 60px;
   padding-right: 30px;
 }
-
 .etapes:hover {
   background-color: #F4ECFF;
 }
-
 .etapes:hover > .logo {
   color: #9356DC;
 }
@@ -187,7 +204,6 @@ h3 {
   color: #333;
   text-decoration: none;
 }
-
 .Restos-card:hover {
   box-shadow: 10px 10px 40px #999;
 }
@@ -242,15 +258,28 @@ h3 {
   z-index: 1;
   position: absolute;
   right: 80px;
-  margin-top: 320px;
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 40px;
-  background: url(/images/coeur-vide.svg);
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/coeur-vide.svg");
+  margin-top: 325px;
+  transition: all 0.5s;
+}
+.coeur:hover {
+  background-image: url("../images/coeur-plein.svg");
 }
 
-.coeur:hover {
-  background: url(/images/coeur-plein.svg);
+.coeur2 {
+  z-index: 1;
+  position: absolute;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/coeur-vide.svg");
+  margin-top: 5px;
+  transition: all 0.5s;
+}
+.coeur2:hover {
+  background-image: url("../images/coeur-plein.svg");
 }
 
 /* autres page */
@@ -279,7 +308,6 @@ h3 {
   padding: 25px 0;
   background-color: white;
   display: flex;
-  justify-content: space-around;
   align-items: baseline;
   border-radius: 60px 60px 0 0;
 }
@@ -310,6 +338,7 @@ h3 {
 
 .plats {
   height: 60px;
+  width: 95%;
   background-color: white;
   border-radius: 30px;
   padding: 20px;
@@ -318,26 +347,36 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  transition: 1s all ease-in-out;
+}
+.plats:hover {
+  width: 77%;
+  border-radius: 30px 0px 0 30px;
+}
+.plats:hover > .platsfond i {
+  transition: 1.5s;
+  transform: rotate(0deg);
 }
 
 .platsfond {
   position: absolute;
   z-index: -1;
   right: 30px;
+  bottom: -31px;
   height: 100px;
   width: 200px;
   background-color: #99E2D0;
   border-radius: 0px 30px 30px 0px;
   transition: all 2s;
 }
-
 .platsfond i {
   position: absolute;
   z-index: -1;
-  right: 55px;
-  top: 40px;
-  font-size: 25px;
+  right: 45px;
+  top: 35px;
+  font-size: 35px;
   color: white;
+  transform: rotate(360deg);
 }
 
 .footer {
