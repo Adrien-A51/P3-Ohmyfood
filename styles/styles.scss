@@ -43,7 +43,6 @@ h2{margin: 0; font-size: 35px;}
   inset: 0;
 }
 
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -88,16 +87,11 @@ p{margin: 0;
 }
 } 
 
-.btn:hover{
-  background: linear-gradient(#9356dc, #ff79da,);
-}
-
 .fonctionnement {
 padding:  40px;
 } 
 
 .etapes{
-	
 	margin: auto;
     margin-bottom: 30px;
 	width: 500px;
@@ -189,7 +183,6 @@ a { /*5*/
   position: relative;
   overflow: hidden;
   border-radius:15px 15px 0 0;
-
 img {
     /*5 - Méthode de centrage en fonction de la taille de l'image */
   position: absolute;
@@ -197,9 +190,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-
 } 
-
 }
 
 
@@ -230,9 +221,6 @@ img {
   background: url(/images/coeur-vide.svg);
 }
 
-.coeur:hover{
-  background: url(images/coeur-plein.svg);
-}
 
 
 
@@ -262,7 +250,6 @@ img {
   padding: 25px 0;
   background-color: white;
   display: flex;
-  justify-content: space-around;
   align-items: baseline;
   border-radius: 60px 60px 0 0;
 }
@@ -322,7 +309,6 @@ img {
   font-size: 25px;
   color: white;
 }
-
 
 
 .footer{height: 250px;

@@ -250,7 +250,7 @@ h3 {
 }
 
 .coeur:hover {
-  background: url(images/coeur-plein.svg);
+  background: url(/images/coeur-plein.svg);
 }
 
 /* autres page */
