@@ -304,7 +304,7 @@ h3 {
   position: absolute;
   width: 100%;
   height: auto;
-  bottom: 135px;
+  bottom: 165px;
   padding: 25px 0;
   background-color: white;
   display: flex;
@@ -313,7 +313,7 @@ h3 {
 }
 
 .menu {
-  margin: 30px;
+  margin: 0 30px 30px 30px;
   font-family: "Roboto";
 }
 .menu h4 {
@@ -348,9 +348,10 @@ h3 {
   justify-content: space-between;
   align-items: flex-end;
   transition: 1s all ease-in-out;
+  -webkit-animation: fadeIn ease 2s;
+          animation: fadeIn ease 2s;
 }
 .plats:hover {
-  width: 77%;
   border-radius: 30px 0px 0 30px;
 }
 .plats:hover > .platsfond i {
@@ -358,7 +359,26 @@ h3 {
   transform: rotate(0deg);
 }
 
-.platsfond {
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*
+
+.platsfond{
   position: absolute;
   z-index: -1;
   right: 30px;
@@ -368,17 +388,18 @@ h3 {
   background-color: #99E2D0;
   border-radius: 0px 30px 30px 0px;
   transition: all 2s;
-}
-.platsfond i {
+i{
   position: absolute;
   z-index: -1;
   right: 45px;
-  top: 35px;
+  top: 35px; 
   font-size: 35px;
   color: white;
   transform: rotate(360deg);
 }
+}
 
+*/
 .footer {
   height: 250px;
   background-color: #393838;
