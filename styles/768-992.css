@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+  h1 {
+    color: #992222;
+  }
+  .fonctionnement {
+    display: flex;
+  }
+  .etapes {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=768-992.css.map */
