@@ -1,6 +1,3 @@
-
-
-
 body{ margin: 0;}
 .header{height:80px;}
 h1{
@@ -232,18 +229,18 @@ img {
   line-height: 35px;}  
 
 .nouveau{
-  @include heading-shadow;
+  @include nouveau;
   right: 55px;
 }
 
 .nouveaug{
-  @include heading-shadow;
+  @include nouveau;
   right: 510px;
   opacity: 0;
 }
 
 .nouveaud{
-  @include heading-shadow;
+  @include nouveau;
   right: 55px;
 }
 
