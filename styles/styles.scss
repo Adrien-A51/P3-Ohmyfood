@@ -1,6 +1,7 @@
 
 
-body{margin: 0;}
+
+body{ margin: 0;}
 .header{height:80px;}
 h1{
 	font-family: 'Shrikhand', cursive; font-size: 45px;
@@ -11,6 +12,7 @@ h2{margin: 0; font-size: 35px;}
  h3{
 	font-size: 33px;
 	font-family: 'Roboto';
+  padding-left: 40px;
   }
 
 /* Création du Chargement */
@@ -66,10 +68,14 @@ p{margin: 0;
 } 
 } 
 
+.fondintro{background-color: #f7f6f6;}
+
 .intro{
 	font-family: 'Roboto'; font-size: 22px; text-align: center;
-	font-weight: 100; background-color: #f7f6f6;
+	font-weight: 100; 
 	padding: 50px 0px 50px 0px;
+  margin: auto;
+  width: 490px;
 } 
 
 .btn{
@@ -115,7 +121,7 @@ padding:  40px;
 .etapes{
 	margin: auto;
   margin-bottom: 30px;
-	width: 500px;
+	width: 415px;
 	height: 80px;
 	border-radius: 30px;
 	background-color: #f7f6f6;
@@ -159,6 +165,7 @@ padding:  40px;
 padding:  0 40px 0 40px;
 h3{
     margin: 0;
+    padding: 0;
 }
 } 
 
@@ -215,14 +222,29 @@ img {
 @mixin nouveau{
   z-index: 1;
   position: absolute;
-    height: 35px;
-    width: 100px;
-    margin-top: 15px;
-    background: #B0E1D0;
-    font-family: 'Roboto';
-	  font-weight: 500;
-    text-align: center;
-    line-height: 35px;
+  height: 35px;
+  width: 100px;
+  margin-top: 15px;
+  background: #B0E1D0;
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-align: center;
+  line-height: 35px;}  
+
+.nouveau{
+  @include heading-shadow;
+  right: 55px;
+}
+
+.nouveaug{
+  @include heading-shadow;
+  right: 510px;
+  opacity: 0;
+}
+
+.nouveaud{
+  @include heading-shadow;
+  right: 55px;
 }
 
 .coeur{
@@ -263,6 +285,7 @@ img {
   background-image: url('../images/coeur-vide.svg');
   margin-top: 325px;
   transition: all .5s;
+  opacity: 0;
     &:hover{
       background-image: url('../images/coeur-plein.svg');
 }
@@ -293,17 +316,18 @@ img {
 
 .photo-head img{
   width: 100%;
+  height: 490px;
   object-fit: cover;
 }
 
 .nom-resto{
   font-family: 'Shrikhand', cursive;
   font-size: 45px;
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: auto;
-  bottom: 165px;
-  padding: 25px 0;
+  height: 32px;
+  bottom: 55px;
+  padding: 25px 0 0;
   background-color: white;
   display: flex;
   align-items: baseline;
@@ -318,7 +342,7 @@ img {
     font-size: 25px;
     border-bottom: solid 4px #99E2D0;
     width: 60px;
-  }
+    }
   .titre{
     font-weight: 500;
     font-size: 28px;

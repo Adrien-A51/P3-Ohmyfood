@@ -157,7 +157,7 @@ h3 {
 .etapes {
   margin: auto;
   margin-bottom: 30px;
-  width: 500px;
+  width: 415px;
   height: 80px;
   border-radius: 30px;
   background-color: #f7f6f6;
@@ -198,6 +198,7 @@ h3 {
 }
 .Restos h3 {
   margin: 0;
+  padding: 0;
 }
 
 .Restos-card {
@@ -314,7 +315,7 @@ h3 {
   margin-top: 325px;
   transition: all 0.5s;
 }
-.coeur:hover {
+.coeurd:hover {
   background-image: url("../images/coeur-plein.svg");
 }
 
@@ -351,11 +352,11 @@ h3 {
 .nom-resto {
   font-family: "Shrikhand", cursive;
   font-size: 45px;
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: auto;
-  bottom: 165px;
-  padding: 25px 0;
+  height: 32px;
+  bottom: 55px;
+  padding: 25px 0 0;
   background-color: white;
   display: flex;
   align-items: baseline;
