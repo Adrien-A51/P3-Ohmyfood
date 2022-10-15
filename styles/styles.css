@@ -291,6 +291,21 @@ h3 {
   opacity: 0;
 }
 
+.coeur{
+  z-index: 1;
+  position: absolute;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/coeur-vide.svg');
+  margin-top: 325px;
+  transition: all .5s;
+}
+    .coeur:hover{
+      background-image: url('../images/coeur-plein.svg');
+}
+
+
 .coeurg {
   z-index: 1;
   position: absolute;
