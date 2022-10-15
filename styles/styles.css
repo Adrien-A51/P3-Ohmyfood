@@ -101,13 +101,18 @@ h3 {
   margin: 0;
 }
 
+.fondintro {
+  background-color: #f7f6f6;
+}
+
 .intro {
   font-family: "Roboto";
   font-size: 22px;
   text-align: center;
   font-weight: 100;
-  background-color: #f7f6f6;
   padding: 50px 0px 50px 0px;
+  margin: auto;
+  width: 490px;
 }
 
 .btn {
@@ -255,7 +260,51 @@ h3 {
   line-height: 35px;
 }
 
-.coeur {
+.nouveaug {
+  z-index: 1;
+  position: absolute;
+  right: 510px;
+  height: 35px;
+  width: 100px;
+  margin-top: 15px;
+  background: #B0E1D0;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-align: center;
+  line-height: 35px;
+  opacity: 0;
+}
+
+.nouveaud {
+  z-index: 1;
+  position: absolute;
+  right: 55px;
+  height: 35px;
+  width: 100px;
+  margin-top: 15px;
+  background: #B0E1D0;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-align: center;
+  line-height: 35px;
+  opacity: 0;
+}
+
+.coeurg {
+  z-index: 1;
+  position: absolute;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/coeur-vide.svg");
+  margin-top: 325px;
+  transition: all 0.5s;
+}
+.coeurg:hover {
+  background-image: url("../images/coeur-plein.svg");
+}
+
+.coeurd {
   z-index: 1;
   position: absolute;
   right: 80px;

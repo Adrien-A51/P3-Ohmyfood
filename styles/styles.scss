@@ -11,7 +11,7 @@ h2{margin: 0; font-size: 35px;}
  h3{
 	font-size: 33px;
 	font-family: 'Roboto';
-  padding-left: 40px;}
+  }
 
 /* Création du Chargement */
 .chargement {
@@ -212,13 +212,9 @@ img {
 } 
 }
 
-
-
-
-.nouveau{
-    z-index: 1;
-    position: absolute;
-    right: 55px;
+@mixin nouveau{
+  z-index: 1;
+  position: absolute;
     height: 35px;
     width: 100px;
     margin-top: 15px;
@@ -230,6 +226,35 @@ img {
 }
 
 .coeur{
+  z-index: 1;
+  position: absolute;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/coeur-vide.svg');
+  margin-top: 325px;
+  transition: all .5s;
+    &:hover{
+      background-image: url('../images/coeur-plein.svg');
+}
+}
+
+.coeurg{
+  z-index: 1;
+  position: absolute;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/coeur-vide.svg');
+  margin-top: 325px;
+  transition: all .5s;
+  opacity: 0;
+    &:hover{
+      background-image: url('../images/coeur-plein.svg');
+}
+}
+
+.coeurd{
   z-index: 1;
   position: absolute;
   right: 80px;
@@ -268,7 +293,6 @@ img {
 
 .photo-head img{
   width: 100%;
-  height: 490px;
   object-fit: cover;
 }
 
