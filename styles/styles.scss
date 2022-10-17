@@ -216,9 +216,10 @@ img {
 } 
 }
 
-@mixin nouveau{
+.nouveau{
   z-index: 1;
   position: absolute;
+  right: 55px;
   height: 35px;
   width: 100px;
   margin-top: 15px;
@@ -228,65 +229,21 @@ img {
   text-align: center;
   line-height: 35px;}  
 
-.nouveau{
-  @include nouveau;
-  right: 55px;
-}
 
-.nouveaug{
-  @include nouveau;
-  right: 510px;
-  opacity: 0;
-}
-
-.nouveaud{
-  @include nouveau;
-  right: 55px;
-}
-
-.coeur{
+.coeur {
   z-index: 1;
   position: absolute;
-  right: 80px;
   width: 50px;
   height: 50px;
   background-image: url('../images/coeur-vide.svg');
   margin-top: 325px;
   transition: all .5s;
+  right: 80px;
     &:hover{
       background-image: url('../images/coeur-plein.svg');
 }
 }
 
-.coeurg{
-  z-index: 1;
-  position: absolute;
-  right: 80px;
-  width: 50px;
-  height: 50px;
-  background-image: url('../images/coeur-vide.svg');
-  margin-top: 325px;
-  transition: all .5s;
-  opacity: 0;
-    &:hover{
-      background-image: url('../images/coeur-plein.svg');
-}
-}
-
-.coeurd{
-  z-index: 1;
-  position: absolute;
-  right: 80px;
-  width: 50px;
-  height: 50px;
-  background-image: url('../images/coeur-vide.svg');
-  margin-top: 325px;
-  transition: all .5s;
-  opacity: 0;
-    &:hover{
-      background-image: url('../images/coeur-plein.svg');
-}
-}
 
 .coeur2{
   z-index: 1;
