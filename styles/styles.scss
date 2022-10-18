@@ -127,6 +127,19 @@ padding:  40px;
   line-height: 80px;
 	text-decoration: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .num{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    margin: 20px 20px 0 -15px;
+    border-radius: 20px;
+    background: #9356DC;
+    color: white;
+    font-family: 'Roboto';
+	  font-weight: 500;
+    line-height: 35px;
+    text-align: center;
+}
   i{
    padding-left: 60px;
    padding-right: 30px;
@@ -139,23 +152,6 @@ padding:  40px;
     }
 }
 
-
-
-    height: 35px;
-    width: 35px;
-    position: absolute;
-    margin: 20px 20px 0 -15px;
-    border-radius: 20px;
-    background: #9356DC;
-    color: white;
-    font-family: 'Roboto';
-	  font-weight: 500;
-    line-height: 35px;
-    text-align: center;
-  
-}
-
-
 .Restos {
 padding:  0 40px 0 40px;
 h3{
@@ -164,7 +160,113 @@ h3{
 }
 } 
 
+.nouveau{
+  z-index: 1;
+  position: relative;
+  left: 82%;
+  top: 5%;
+  height: 35px;
+  width: 100px;
+  margin-top: 15px;
+  background: #B0E1D0;
+  font-family: 'Roboto';
+  font-weight: 500;
+  text-align: center;
+  line-height: 35px;
+}  
 
+.coeur {
+position: relative;
+width: 50px;
+height: 50px;
+background-image: url(../images/coeur-vide.svg);
+transition: all 0.5s;
+left: 92%;
+bottom: 60px;
+  &:hover{
+    background-image: url('../images/coeur-plein.svg');
+}
+}
+
+@mixin bckgnd-imgrc {
+margin: auto;
+height: 350px;
+width: 100%;
+background-size: cover;
+background-position: center;
+border-radius: 20px 20px 0 0;
+box-shadow: 0px 5px 20px #999;
+margin-bottom: 150px;
+text-decoration: none;
+}
+
+@mixin restos-texte {
+background-color: white;
+border-radius: 0 0 20px 20px;
+box-shadow: 0px 5px 20px #999;
+padding: 20px;
+margin-bottom: 40px;
+height: 80px;
+position: relative;
+top: 88%;
+}
+
+@mixin restos-texte-p {
+font-family: 'Roboto';
+font-weight: 100;
+font-size: 30px;
+margin-top: 5px;
+margin-bottom: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+a .restos-case1{
+background-image: url('../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+@include bckgnd-imgrc;
+}
+.restos-texte{
+@include restos-texte();
+  p{
+@include restos-texte-p();
+  }
+}
+
+.restos-case2{
+background-image: url('../images/stil-u2Lp8tXIcjw-unsplash.jpg');
+@include bckgnd-imgrc;
+}
+.restos-texte{
+@include restos-texte();
+  p{
+@include restos-texte-p();
+  }
+}
+
+.restos-case3{
+background-image: url('../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+@include bckgnd-imgrc;
+}
+.restos-texte{
+@include restos-texte();
+  p{
+@include restos-texte-p();
+  }
+}
+
+.restos-case4{
+background-image: url('../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+@include bckgnd-imgrc;
+}
+.restos-texte{
+@include restos-texte();
+  p{
+@include restos-texte-p();
+  }
+}
 
 .coeur2{
   z-index: 1;
@@ -312,3 +414,4 @@ i{
 	margin-right: 15px;
 }
 }
+
