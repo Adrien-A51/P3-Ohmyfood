@@ -72,7 +72,6 @@ p{margin: 0;
 	font-weight: 100; 
 	padding: 50px 0px 50px 0px;
   margin: auto;
-  width: 490px;
 } 
 
 .btn{
@@ -141,7 +140,6 @@ padding:  40px;
 }
 
 
-.num{
 
     height: 35px;
     width: 35px;
@@ -166,83 +164,6 @@ h3{
 }
 } 
 
-
-.Restos-card {
-  border-radius: 20px;
-  box-shadow: 0px 5px 20px #999;
-  transition: all 0.5s;
-  margin: 30px 0 30px 0;
-    a { /*5*/
-        color: #333; 
-        text-decoration: none;
-      }
-    &:hover{
-      box-shadow: 10px 10px 40px #999;
-    }
-  }
-
-.Restos-card-text {
-  padding: 20px 0 0 20px; /*2*/
-  box-sizing: border-box; /*3*/
-  height: 115px; 
-    h3{
-    margin: 0;
-  }
-     p{
-    font-family: 'Roboto';
-    font-weight: 100;
-      font-size: 30px;
-      margin-top: 5px;
-      display: flex;
-      justify-content: space-between;
-
-  }
-
-  }
-
-
-.Restos-card-image {
-  height:290px;
-  position: relative;
-  overflow: hidden;
-  border-radius:15px 15px 0 0;
-img {
-    /*5 - Méthode de centrage en fonction de la taille de l'image */
-  position: absolute;
-  top: 28%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-} 
-}
-
-.nouveau{
-  z-index: 1;
-  position: absolute;
-  right: 55px;
-  height: 35px;
-  width: 100px;
-  margin-top: 15px;
-  background: #B0E1D0;
-  font-family: 'Roboto';
-  font-weight: 500;
-  text-align: center;
-  line-height: 35px;}  
-
-
-.coeur {
-  z-index: 1;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-image: url('../images/coeur-vide.svg');
-  margin-top: 325px;
-  transition: all .5s;
-  right: 80px;
-    &:hover{
-      background-image: url('../images/coeur-plein.svg');
-}
-}
 
 
 .coeur2{
