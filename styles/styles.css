@@ -220,8 +220,8 @@ h3 {
   height: 50px;
   background-image: url(../images/coeur-vide.svg);
   transition: all 0.5s;
-  left: 92%;
-  bottom: 60px;
+  left: 90%;
+  bottom: 70px;
 }
 .coeur:hover {
   background-image: url("../images/coeur-plein.svg");
@@ -232,7 +232,7 @@ a {
   color: #000;
 }
 
-a .restos-case1 {
+.restos-case1 {
   background-image: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   margin: auto;
   height: 350px;
@@ -244,8 +244,10 @@ a .restos-case1 {
   margin-bottom: 150px;
   text-decoration: none;
 }
-
-.restos-texte {
+.restos-case1:hover {
+  box-shadow: 20px 25px 40px #999;
+}
+.restos-case1 .restos-texte {
   background-color: white;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 5px 20px #999;
@@ -255,7 +257,7 @@ a .restos-case1 {
   position: relative;
   top: 88%;
 }
-.restos-texte p {
+.restos-case1 .restos-texte p {
   font-family: "Roboto";
   font-weight: 100;
   font-size: 30px;
@@ -275,8 +277,10 @@ a .restos-case1 {
   margin-bottom: 150px;
   text-decoration: none;
 }
-
-.restos-texte {
+.restos-case2:hover {
+  box-shadow: 20px 25px 40px #999;
+}
+.restos-case2 .restos-texte {
   background-color: white;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 5px 20px #999;
@@ -286,7 +290,7 @@ a .restos-case1 {
   position: relative;
   top: 88%;
 }
-.restos-texte p {
+.restos-case2 .restos-texte p {
   font-family: "Roboto";
   font-weight: 100;
   font-size: 30px;
@@ -306,8 +310,10 @@ a .restos-case1 {
   margin-bottom: 150px;
   text-decoration: none;
 }
-
-.restos-texte {
+.restos-case3:hover {
+  box-shadow: 20px 25px 40px #999;
+}
+.restos-case3 .restos-texte {
   background-color: white;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 5px 20px #999;
@@ -317,7 +323,7 @@ a .restos-case1 {
   position: relative;
   top: 88%;
 }
-.restos-texte p {
+.restos-case3 .restos-texte p {
   font-family: "Roboto";
   font-weight: 100;
   font-size: 30px;
@@ -337,8 +343,10 @@ a .restos-case1 {
   margin-bottom: 150px;
   text-decoration: none;
 }
-
-.restos-texte {
+.restos-case4:hover {
+  box-shadow: 20px 25px 40px #999;
+}
+.restos-case4 .restos-texte {
   background-color: white;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 5px 20px #999;
@@ -348,7 +356,7 @@ a .restos-case1 {
   position: relative;
   top: 88%;
 }
-.restos-texte p {
+.restos-case4 .restos-texte p {
   font-family: "Roboto";
   font-weight: 100;
   font-size: 30px;
@@ -436,37 +444,43 @@ a .restos-case1 {
   justify-content: space-between;
   align-items: flex-end;
   transition: 1s all ease-in-out;
-  -webkit-animation: fadeIn ease 4s;
-          animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 3s;
+          animation: fadeIn ease 3s;
   /*
+        &:hover{
+          width: 79%;
+          border-radius: 30px 0px 0 30px;
+        }
+        &:hover > .platsfond {
+          transition: 1.5s;
+
+          }
+
         &:hover > .platsfond i{
         transition: 1.5s;
         transform: rotate(0deg);
         }
   */
 }
-.plats:hover {
-  width: 79%;
-  border-radius: 30px 0px 0 30px;
-}
-.plats:hover > .platsfond {
-  transition: 1.5s;
-}
 
 @-webkit-keyframes fadeIn {
   0% {
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
   0% {
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }

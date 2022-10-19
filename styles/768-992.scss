@@ -1,4 +1,4 @@
-@media screen and (min-width:768px)
+@media screen and (min-width:768px) and (max-width: 991px)
 {
 h1{
     color: #992222;
@@ -25,14 +25,43 @@ width: 80%;
 
 .nouveau{
     left: 73%;
-    top: 4%;
+    top: 0%;
 }
 
 .restos-texte{
     top: 80%;
 }
-a{
-    width: 100%;
+
+.restos-case1 .restos-texte {
+    top: 80%;
+    h3{font-size: 30px;}
+    p{
+        font-size: 26px;
+    }
+}
+
+.restos-case2 .restos-texte {
+    top: 80%;
+    h3{font-size: 30px;}
+    p{
+        font-size: 26px;
+    }
+}
+
+.restos-case3 .restos-texte {
+    top: 80%;
+    h3{font-size: 30px;}
+    p{
+        font-size: 26px;
+    }
+}
+
+.restos-case4 .restos-texte {
+    top: 80%;
+    h3{font-size: 30px;}
+    p{
+        font-size: 26px;
+    }
 }
 
 } /*@media screen and (min-width:768px)*/
