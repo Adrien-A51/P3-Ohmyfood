@@ -8,6 +8,15 @@ h1{
 
 .etapes{
 width: 80%;
+font-size: 18px;
+    i {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+}
+
+.restos-texte{
+    top: 80%;
 }
 
 .restos-case{
@@ -28,7 +37,21 @@ width: 80%;
     top: 0%;
 }
 
-.restos-texte{
+
+.restos-case1 .restos-texte {
+    top: 80%;
+}
+
+.restos-case2 .restos-texte {
+    top: 80%;
+}
+
+.restos-case3 .restos-texte {
+    top: 80%;
+}
+
+
+.restos-case4 .restos-texte {
     top: 80%;
 }
 

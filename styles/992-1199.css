@@ -7,6 +7,14 @@
   }
   .etapes {
     width: 80%;
+    font-size: 18px;
+  }
+  .etapes i {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  .restos-texte {
+    top: 80%;
   }
   .restos-case {
     display: flex;
@@ -22,8 +30,24 @@
     left: 73%;
     top: 0%;
   }
-  .restos-texte {
+  .restos-case1 .restos-texte {
     top: 80%;
+  }
+  .restos-case2 .restos-texte {
+    top: 80%;
+  }
+  .restos-case3 .restos-texte {
+    top: 80%;
+  }
+  .restos-case4 .restos-texte {
+    top: 80%;
+  }
+  .fonctionnement {
+    display: flex;
+    gap: 20px;
+  }
+  .flex {
+    display: flex;
   }
 } /*@media screen and (min-width:992px)*/
 /*# sourceMappingURL=992-1199.css.map *//*# sourceMappingURL=992-1199.css.map */
