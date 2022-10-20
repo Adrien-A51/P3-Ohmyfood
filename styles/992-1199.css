@@ -1,7 +1,4 @@
 @media screen and (min-width: 992px) {
-  h1 {
-    color: yellowgreen;
-  }
   .intro {
     width: auto;
   }
@@ -45,6 +42,9 @@
   .fonctionnement {
     display: flex;
     gap: 20px;
+  }
+  .menu .prix {
+    right: 5%;
   }
 } /*@media screen and (min-width:992px)*/
 /*# sourceMappingURL=992-1199.css.map *//*# sourceMappingURL=992-1199.css.map */

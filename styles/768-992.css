@@ -1,7 +1,4 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  h1 {
-    color: #992222;
-  }
   .intro {
     width: auto;
   }
@@ -60,6 +57,9 @@
   }
   .restos-case4 .restos-texte p {
     font-size: 26px;
+  }
+  .menu .prix {
+    right: 5%;
   }
 } /*@media screen and (min-width:768px)*/
 /*# sourceMappingURL=768-992.css.map *//*# sourceMappingURL=768-992.css.map */
