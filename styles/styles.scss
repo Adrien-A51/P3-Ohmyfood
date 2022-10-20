@@ -349,12 +349,14 @@ background-image: url('../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.
   .prix{
     font-weight: 600;
     font-size: 25px;
+    position: absolute;
+    right: 7%;
   }
   }
 
 .plats{
   height: 60px;
-  width: 95%;
+  width: auto;
   background-color: white;
   border-radius: 30px;
   padding: 20px;
@@ -365,6 +367,28 @@ background-image: url('../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.
   align-items: flex-end;
   transition: 1s all ease-in-out;
   animation: fadeIn ease 3s;
+  overflow: hidden;
+
+  &:hover > .check-vert{
+    transform: translate(-110px);
+  }
+
+    .check-vert{
+      position: relative;
+      left: 130px;
+      top: 25px;
+      height: 108px;
+      width: 105px;
+      background-color: #99E2D0;
+      transition: all 2s;
+      text-align: center;
+      i{
+        color: white;
+        line-height: 100px;
+        font-size: 27px;
+      }
+    }
+  
   /*
       &:hover{
         width: 79%;

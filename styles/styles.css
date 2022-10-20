@@ -430,11 +430,13 @@ a {
 .menu .prix {
   font-weight: 600;
   font-size: 25px;
+  position: absolute;
+  right: 7%;
 }
 
 .plats {
   height: 60px;
-  width: 95%;
+  width: auto;
   background-color: white;
   border-radius: 30px;
   padding: 20px;
@@ -446,6 +448,7 @@ a {
   transition: 1s all ease-in-out;
   -webkit-animation: fadeIn ease 3s;
           animation: fadeIn ease 3s;
+  overflow: hidden;
   /*
         &:hover{
           width: 79%;
@@ -461,6 +464,24 @@ a {
         transform: rotate(0deg);
         }
   */
+}
+.plats:hover > .check-vert {
+  transform: translate(-110px);
+}
+.plats .check-vert {
+  position: relative;
+  left: 130px;
+  top: 25px;
+  height: 108px;
+  width: 105px;
+  background-color: #99E2D0;
+  transition: all 2s;
+  text-align: center;
+}
+.plats .check-vert i {
+  color: white;
+  line-height: 100px;
+  font-size: 27px;
 }
 
 @-webkit-keyframes fadeIn {
@@ -484,26 +505,6 @@ a {
     opacity: 1;
   }
 }
-.platsfond {
-  position: absolute;
-  right: 30px;
-  bottom: -20px;
-  height: 100px;
-  width: 105px;
-  background-color: #99E2D0;
-  border-radius: 0px 30px 30px 0px;
-  transition: all 2s;
-}
-.platsfond i {
-  position: absolute;
-  z-index: -1;
-  right: 45px;
-  top: 35px;
-  font-size: 35px;
-  color: white;
-  transform: rotate(360deg);
-}
-
 .footer {
   height: 250px;
   background-color: #393838;
