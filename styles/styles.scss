@@ -316,7 +316,7 @@ background-image: url('../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.
 
 .nom-resto{
   font-family: 'Shrikhand', cursive;
-  font-size: 45px;
+  font-size: 34px;
   position: relative;
   width: 100%;
   height: 32px;
@@ -351,6 +351,7 @@ background-image: url('../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.
     font-size: 25px;
     position: absolute;
     right: 7%;
+    transition: all 2s;
   }
   }
 
@@ -373,6 +374,14 @@ background-image: url('../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.
     transform: translate(-110px);
   }
 
+  &:hover > .check-vert i{
+    animation: rotate 2s;
+  }
+
+  &:hover > .prix{
+    transform: translate(-110px);
+  }
+
     .check-vert{
       position: relative;
       left: 130px;
@@ -385,7 +394,7 @@ background-image: url('../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.
       i{
         color: white;
         line-height: 100px;
-        font-size: 27px;
+        font-size: 30px;
       }
     }
   
