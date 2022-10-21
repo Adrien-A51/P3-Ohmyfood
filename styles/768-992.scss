@@ -13,6 +13,7 @@ width: 80%;
 
 .coeur{
     left: 85%;
+    bottom: 60px;
 }
 
 .restos-case{
@@ -21,8 +22,8 @@ width: 80%;
 }
 
 .nouveau{
-    left: 73%;
-    top: 0%;
+    left: 72%;
+    top: 5%;
 }
 
 .restos-texte{
@@ -67,6 +68,8 @@ width: 80%;
       right: 5%;
     }
     }
+
+    a{width: 100%;}
 
 } /*@media screen and (min-width:768px)*/
 /*# sourceMappingURL=768-992.css.map */

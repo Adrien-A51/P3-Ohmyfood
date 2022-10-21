@@ -1,14 +1,20 @@
 @media screen and (min-width: 992px) {
+  h3 {
+    text-align: center;
+  }
+  .Restos h3 {
+    text-align: left;
+  }
   .intro {
     width: auto;
   }
   .etapes {
     width: 80%;
-    font-size: 18px;
+    font-size: 20px;
   }
   .etapes i {
-    padding-left: 30px;
-    padding-right: 10px;
+    padding-left: 50px;
+    padding-right: 25px;
   }
   .restos-texte {
     top: 80%;
@@ -17,7 +23,7 @@
     display: flex;
   }
   .coeur {
-    left: 85%;
+    left: 90%;
   }
   .restos-case {
     display: flex;
@@ -25,7 +31,7 @@
   }
   .nouveau {
     left: 82%;
-    top: 0%;
+    top: 4%;
   }
   .restos-case1 .restos-texte {
     top: 80%;
@@ -44,7 +50,10 @@
     gap: 20px;
   }
   .menu .prix {
-    right: 5%;
+    right: 3%;
+  }
+  a {
+    width: 100%;
   }
 } /*@media screen and (min-width:992px)*/
 /*# sourceMappingURL=992-1199.css.map *//*# sourceMappingURL=992-1199.css.map */
