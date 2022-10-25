@@ -1,5 +1,6 @@
 @media screen and (min-width:992px)
 {
+    h4{margin-bottom: 5px;}
 
 .intro{width: auto;}
 
@@ -57,11 +58,15 @@ font-size: 18px;
     gap: 20px;
 }
 
-.menu{
-    .prix{
-      right: 3%;
-    }
-    }
+
+.case-plat-g{
+    h3{font-size: 19px;}
+    p{font-size: 17px;}
+}
+
+.prix{font-size: 17px;}
+
+
     a{width: 100%;}
 
 
