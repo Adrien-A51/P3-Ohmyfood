@@ -23,44 +23,10 @@
   .restos-texte {
     top: 80%;
   }
-  .restos-case1 .restos-texte {
-    top: 80%;
-  }
-  .restos-case1 .restos-texte h3 {
-    font-size: 30px;
-  }
-  .restos-case1 .restos-texte p {
-    font-size: 26px;
-  }
-  .restos-case2 .restos-texte {
-    top: 80%;
-  }
-  .restos-case2 .restos-texte h3 {
-    font-size: 30px;
-  }
-  .restos-case2 .restos-texte p {
-    font-size: 26px;
-  }
-  .restos-case3 .restos-texte {
-    top: 80%;
-  }
-  .restos-case3 .restos-texte h3 {
-    font-size: 30px;
-  }
-  .restos-case3 .restos-texte p {
-    font-size: 26px;
-  }
-  .restos-case4 .restos-texte {
-    top: 80%;
-  }
-  .restos-case4 .restos-texte h3 {
-    font-size: 30px;
-  }
-  .restos-case4 .restos-texte p {
-    font-size: 26px;
-  }
-  a {
-    width: 100%;
-  }
-} /*@media screen and (min-width:768px)*/
+}
+a {
+  width: 100%;
+}
+
+/*@media screen and (min-width:768px)*/
 /*# sourceMappingURL=768-992.css.map *//*# sourceMappingURL=768-992.css.map */
