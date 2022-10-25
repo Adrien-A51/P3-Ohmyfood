@@ -86,7 +86,8 @@ p{margin: 0;
   font-size: 22px;
   box-shadow: 0px 5px 20px #999;
     &:hover{
-      background: linear-gradient(#9356dc, #ff79da,);
+      background: linear-gradient(#ffa5e5,#a171dc);
+      box-shadow: 10px 15px 25px #999;
     }
 }
 
@@ -105,7 +106,8 @@ p{margin: 0;
   text-align: center;
   box-shadow: 0px 5px 20px #999;
     &:hover{
-      background: linear-gradient(#9356dc, #ff79da,);
+      background: linear-gradient(#ffa5e5,#a171dc);
+      box-shadow: 10px 15px 25px #999;
     }
 }
 
@@ -329,13 +331,14 @@ background-image: url('../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.
 }
 
 .menu{
-  margin: 0 30px 30px 30px;
+  /*margin: 0 30px 30px 30px;*/
   font-family: 'Roboto';
   h4{
     font-weight: 200;
     font-size: 25px;
     border-bottom: solid 4px #99E2D0;
     width: 60px;
+    margin-left: 25px;
     }
   .titre{
     font-weight: 500;
@@ -348,6 +351,100 @@ background-image: url('../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.
   }
   }
 
+
+
+/* Animation du plat */
+@keyframes menu-animation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+/* Animation check */
+@keyframes animation-check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.plats{
+  margin: 20px 0 0 20px;
+  width: 94%;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0px 5px 20px #999;
+  animation: fadeIn ease 3s;
+}
+
+.case-plat{
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  &:hover .coche {
+    margin-right: 0px;
+  }
+  &:hover i {
+    animation: animation-check 500ms ease-in-out;
+  }
+}
+
+.case-plat-g{
+padding: 1rem;
+overflow: hidden;
+  h3{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+  }
+  p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+    font-size: 26px;
+  }
+}
+
+.case-plat-d{
+  display: flex;
+  margin-left: auto;
+}
+
+.prix{
+  display: flex;
+  align-items: flex-end;
+  font-weight: 900;
+  font-size: 26px;
+  margin: 0;
+  padding: 1rem;
+}
+
+.coche{
+  background-color: #99E2D0;
+  margin-right: -80px;
+  width: 80px;
+  transition: margin-right 500ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+  }
+}
 
 .footer{height: 250px;
 	background-color: #393838;
@@ -366,4 +463,5 @@ i{
 	margin-right: 15px;
 }
 }
+
 

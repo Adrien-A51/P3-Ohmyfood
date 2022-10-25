@@ -127,7 +127,8 @@ h3 {
   box-shadow: 0px 5px 20px #999;
 }
 .btn:hover {
-  background: linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(#ffa5e5, #a171dc);
+  box-shadow: 10px 15px 25px #999;
 }
 
 .btn2 {
@@ -146,7 +147,8 @@ h3 {
   box-shadow: 0px 5px 20px #999;
 }
 .btn2:hover {
-  background: linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(#ffa5e5, #a171dc);
+  box-shadow: 10px 15px 25px #999;
 }
 
 .fonctionnement {
@@ -409,7 +411,7 @@ a {
 }
 
 .menu {
-  margin: 0 30px 30px 30px;
+  /*margin: 0 30px 30px 30px;*/
   font-family: "Roboto";
 }
 .menu h4 {
@@ -417,6 +419,7 @@ a {
   font-size: 25px;
   border-bottom: solid 4px #99E2D0;
   width: 60px;
+  margin-left: 25px;
 }
 .menu .titre {
   font-weight: 500;
@@ -427,92 +430,118 @@ a {
   font-size: 25px;
   margin: 0;
 }
-.menu .prix {
-  font-weight: 600;
-  font-size: 25px;
-  position: absolute;
-  right: 7%;
-  transition: all 2s;
-}
 
+/* Animation du plat */
+@-webkit-keyframes menu-animation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+@keyframes menu-animation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+/* Animation check */
+@-webkit-keyframes animation-check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes animation-check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .plats {
-  height: 60px;
-  width: auto;
-  background-color: white;
-  border-radius: 30px;
-  padding: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0 0 20px;
+  width: 94%;
+  overflow: hidden;
+  border-radius: 25px;
   box-shadow: 0px 5px 20px #999;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  transition: 1s all ease-in-out;
   -webkit-animation: fadeIn ease 3s;
           animation: fadeIn ease 3s;
+}
+
+.case-plat {
+  background-color: white;
+  display: flex;
   overflow: hidden;
-  /*
-        &:hover{
-          width: 79%;
-          border-radius: 30px 0px 0 30px;
-        }
-        &:hover > .platsfond {
-          transition: 1.5s;
+}
+.case-plat:hover .coche {
+  margin-right: 0px;
+}
+.case-plat:hover i {
+  -webkit-animation: animation-check 500ms ease-in-out;
+          animation: animation-check 500ms ease-in-out;
+}
 
-          }
+.case-plat-g {
+  padding: 1rem;
+  overflow: hidden;
+}
+.case-plat-g h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+}
+.case-plat-g p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: 26px;
+}
 
-        &:hover > .platsfond i{
-        transition: 1.5s;
-        transform: rotate(0deg);
-        }
-  */
+.case-plat-d {
+  display: flex;
+  margin-left: auto;
 }
-.plats:hover > .check-vert {
-  transform: translate(-110px);
+
+.prix {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 900;
+  font-size: 26px;
+  margin: 0;
+  padding: 1rem;
 }
-.plats:hover > .check-vert i {
-  -webkit-animation: rotate 2s;
-          animation: rotate 2s;
-}
-.plats:hover > .prix {
-  transform: translate(-110px);
-}
-.plats .check-vert {
-  position: relative;
-  left: 130px;
-  top: 25px;
-  height: 108px;
-  width: 105px;
+
+.coche {
   background-color: #99E2D0;
-  transition: all 2s;
-  text-align: center;
+  margin-right: -80px;
+  width: 80px;
+  transition: margin-right 500ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.plats .check-vert i {
+.coche i {
   color: white;
-  line-height: 100px;
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 .footer {
   height: 250px;
   background-color: #393838;
