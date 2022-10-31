@@ -478,14 +478,35 @@ a {
     transform: rotate(0);
   }
 }
+/* Apparition plats */
+@-webkit-keyframes fadeInUp {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
 .plats {
   margin: 20px 0 0 20px;
   width: 94%;
   overflow: hidden;
   border-radius: 25px;
   box-shadow: 0px 5px 20px #999;
-  -webkit-animation: fadeIn ease 3s;
-          animation: fadeIn ease 3s;
+  -webkit-animation: fadeInUp 1s ease backwards;
+          animation: fadeInUp 1s ease backwards;
 }
 
 .case-plat {
